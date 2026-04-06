@@ -1,0 +1,61 @@
+.dashboard {
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.dashboard-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.question-count {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A90E2;
+}
+
+.charts {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    height: 250px;
+}
+
+.chart-wrapper {
+    flex: 1;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.frequent-topics {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.topic {
+    flex: 1;
+    min-width: 80px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.topic:hover {
+    background: #f0f0f0;
+    border-color: #4A90E2;
+}
