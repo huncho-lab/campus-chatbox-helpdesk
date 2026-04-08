@@ -20,6 +20,7 @@ export default function Dashboard() {
   const [trending, setTrending] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [faqOpen, setFaqOpen] = useState(false);
 
   useEffect(() => {
     Promise.all([getTrendingQuestions(), getCategoryStats()])
@@ -90,18 +91,22 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <div className="dashboard-header" style={{ marginTop: '1.5rem' }}>
-        <h2>Frequently asked questions</h2>
-      </div>
-      <div className="faq-list">
-        {trending.map((t, i) => (
-          <div key={t.question} className="faq-item">
-            <span className="faq-rank">#{i + 1}</span>
-            <span className="faq-question">{t.question}</span>
-            <span className="faq-count">{t.count} asks</span>
-          </div>
-        ))}
-      </div>
+      <button className="faq-toggle" onClick={() => setFaqOpen(o => !o)}>
+        Frequently Asked Questions
+        <span className={`faq-chevron ${faqOpen ? 'open' : ''}`}>&#8964;</span>
+      </button>
+
+      {faqOpen && (
+        <div className="faq-list">
+          {trending.map((t, i) => (
+            <div key={t.question} className="faq-item">
+              <span className="faq-rank">#{i + 1}</span>
+              <span className="faq-question">{t.question}</span>
+              <span className="faq-count">{t.count} asks</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
