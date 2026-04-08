@@ -1,0 +1,105 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  background: #F0F4FF;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 40px rgba(79,70,229,0.1);
+}
+
+/* ── Top bar ───────────────────────────────────────── */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #E5E7EB;
+  background: #fff;
+  flex-shrink: 0;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #4F46E5, #7C3AED);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.app-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111827;
+  display: block;
+  line-height: 1.2;
+}
+.app-sub {
+  font-size: 10px;
+  color: #9CA3AF;
+  display: block;
+  line-height: 1.2;
+}
+.groq-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: #F59E0B;
+  background: #FFFBEB;
+  border: 1px solid #FDE68A;
+  padding: 3px 10px;
+  border-radius: 99px;
+}
+
+/* ── Main content ──────────────────────────────────── */
+.main-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.main-content > * { flex: 1; overflow-y: auto; }
+
+/* ── Bottom nav ────────────────────────────────────── */
+.bottom-nav {
+  display: flex;
+  border-top: 1px solid #E5E7EB;
+  background: #fff;
+  flex-shrink: 0;
+}
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 0.65rem 0.5rem;
+  font-size: 11.5px;
+  color: #9CA3AF;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s;
+  border: none;
+  background: none;
+}
+.nav-item.active { color: #4F46E5; }
+.nav-icon { font-size: 20px; line-height: 1; }
