@@ -37,20 +37,20 @@
 }
 
 .message.bot .message-text {
-    background: #E3F2FD;
-    color: #333;
+    background: var(--color-primary-light);
+    color: var(--color-text);
 }
 
 .message.user .message-text {
-    background: #C8E6C9;
-    color: #333;
+    background: var(--color-primary);
+    color: #fff;
 }
 
 .input-area {
     display: flex;
     gap: 0.5rem;
     padding: 0.75rem;
-    border-top: 1px solid #eee;
+    border-top: 1px solid var(--color-border);
     background: #f9f9f9;
 }
 
@@ -58,13 +58,13 @@
     flex: 1;
     padding: 0.75rem 1rem;
     border-radius: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-border);
     font-size: 14px;
 }
 
 .input-area input:focus {
     outline: none;
-    border-color: #4A90E2;
+    border-color: var(--color-primary);
 }
 
 .input-area button {
@@ -72,16 +72,30 @@
     height: 40px;
     border-radius: 50%;
     border: none;
-    background: #4A90E2;
+    background: var(--color-primary);
     color: #fff;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 16px;
-    transition: all 0.2s;
+    transition: background 0.2s;
 }
 
 .input-area button:hover {
-    background: #357ABD;
+    background: var(--color-primary-dark);
+}
+
+.input-area button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.input-area input:disabled {
+    background: #f0f0f0;
+}
+
+.message-text.typing {
+    color: #999;
+    font-style: italic;
 }

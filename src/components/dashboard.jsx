@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Bar, Doughnut } from 'react-chartjs-2';
 import {
   Chart as ChartJS,
@@ -9,34 +9,56 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import { getTrendingQuestions, getCategoryStats } from '../services/api';
 import './Dashboard.css';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, ArcElement, Tooltip, Legend);
 
+const COLORS = ['#37a4fc', '#1a8ae0', '#0d5fa3', '#a8d8ff'];
+
 export default function Dashboard() {
+  const [trending, setTrending] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    Promise.all([getTrendingQuestions(), getCategoryStats()])
+      .then(([t, c]) => {
+        setTrending(t);
+        setCategories(c);
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
   const barData = {
-    labels: ['Library hours', 'Sports', 'Fee payments', 'Exam schedule'],
+    labels: categories.map(c => c.category),
     datasets: [{
       label: 'Questions',
-      data: [1200, 950, 700, 500],
-      backgroundColor: ['#4A90E2', '#F5A623', '#50E3C2', '#9013FE'],
+      data: categories.map(c => c.count),
+      backgroundColor: COLORS,
       borderRadius: 4,
-    }]
+    }],
   };
 
   const doughnutData = {
-    labels: ['Library', 'Academics', 'Finance'],
+    labels: categories.map(c => c.category),
     datasets: [{
-      data: [35, 28, 17],
-      backgroundColor: ['#4A90E2', '#F5A623', '#50E3C2'],
-    }]
+      data: categories.map(c => c.count),
+      backgroundColor: COLORS,
+    }],
   };
+
+  const totalCount = trending.reduce((sum, t) => sum + t.count, 0);
+
+  if (loading) {
+    return <div className="dashboard-loading">Loading…</div>;
+  }
 
   return (
     <div className="dashboard">
       <div className="dashboard-header">
         <h2>Trending questions</h2>
-        <span className="question-count">1,482 ↑</span>
+        <span className="question-count">{totalCount} ↑</span>
       </div>
 
       <div className="charts">
@@ -49,8 +71,8 @@ export default function Dashboard() {
       </div>
 
       <div className="frequent-topics">
-        {['Library', 'Schedules', 'Facilities', 'Fees'].map(t => (
-          <button key={t} className="topic">{t}</button>
+        {trending.map(t => (
+          <button key={t.question} className="topic">{t.question}</button>
         ))}
       </div>
     </div>

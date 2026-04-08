@@ -1,5 +1,5 @@
 {
-  "name": "campus-helpdesk-frontend",
+  "name": "dunaujvaros-university-information-guide",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,13 +11,10 @@
   },
   "dependencies": {
     "chart.js": "^4.5.1",
-    "framer-motion": "^12.35.2",
-    "lucide-react": "^0.576.0",
     "react": "^19.2.0",
     "react-chartjs-2": "^5.3.1",
     "react-dom": "^19.2.0",
-    "react-router-dom": "^7.13.1",
-    "recharts": "^3.7.0"
+    "react-router-dom": "^7.13.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
