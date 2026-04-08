@@ -2,16 +2,8 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import Dashboard from './components/dashboard.jsx';
 import Chat from './components/chat.jsx';
+import ProfilePage from './pages/ProfilePage.jsx';
 import './App.css';
-
-function ProfilePage() {
-  return (
-    <div className="profile-page">
-      <h2>Profile</h2>
-      <p>Student profile and settings coming soon.</p>
-    </div>
-  );
-}
 
 export default function App() {
   return (
@@ -34,9 +26,9 @@ export default function App() {
         </main>
 
         <nav className="bottom-nav">
-          <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>📊 Dashboard</NavLink>
-          <NavLink to="/chat" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>💬 Chat</NavLink>
-          <NavLink to="/profile" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>👤 Profile</NavLink>
+          <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>Dashboard</NavLink>
+          <NavLink to="/chat" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>Chat</NavLink>
+          <NavLink to="/profile" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>Profile</NavLink>
         </nav>
       </div>
     </BrowserRouter>
