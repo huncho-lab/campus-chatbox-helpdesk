@@ -1,0 +1,24 @@
+{
+  "name": "DUE Student Guide",
+  "short_name": "DUE Guide",
+  "description": "University of Dunaújváros campus information guide",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1e3a8a",
+  "theme_color": "#1e3a8a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png.avif",
+      "sizes": "192x192",
+      "type": "image/avif",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png.avif",
+      "sizes": "512x512",
+      "type": "image/avif",
+      "purpose": "any maskable"
+    }
+  ]
+}

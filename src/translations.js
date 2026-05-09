@@ -1,0 +1,441 @@
+export const translations = {
+  en: {
+    // ── App shell ──────────────────────────────────────────────────────────
+    appTitle: 'DUE Guide',
+    appSubtitle: 'Dunaújváros University',
+    menu: 'Menu',
+    close: 'Close menu',
+
+    // ── Drawer nav ─────────────────────────────────────────────────────────
+    home: 'Home',
+    dashboard: 'Dashboard',
+    chat: 'Ask a Question',
+    faq: 'FAQ',
+    history: 'About & History',
+    profile: 'My Profile',
+
+    // ── Home page — hero ───────────────────────────────────────────────────
+    heroWelcome: 'Welcome to',
+    heroUniversity: 'Dunaújváros University',
+    heroTagline: 'Your complete campus information guide',
+    heroDesc: 'Get instant answers about courses, schedules, facilities, fees, and campus life — all in one place. Powered by a comprehensive DUE knowledge base.',
+    heroChatBtn: 'Ask a Question',
+    heroDashBtn: 'View Dashboard',
+
+    // ── Home page — about strip ────────────────────────────────────────────
+    aboutStripText: 'Founded in 1955 · Dunaújváros, Hungary · 42+ nationalities · 41 Erasmus partnerships · BSc & MSc programs in English',
+
+    // ── Home page — features ───────────────────────────────────────────────
+    featuresTitle: 'What can I help you with?',
+    feat1Title: 'Instant Answers',
+    feat1Desc: 'Ask anything about campus life in plain language and get an immediate AI-powered response from our DUE knowledge base.',
+    feat2Title: 'Trending Topics',
+    feat2Desc: 'See what your fellow students are asking about most right now — from NEPTUN to scholarships.',
+    feat3Title: 'Campus & FAQ',
+    feat3Desc: 'Ranked frequently asked questions about facilities, fees, dormitories, and academic life.',
+    feat4Title: 'Student Profile',
+    feat4Desc: 'Save your student details for a personalised campus guide experience.',
+
+    // ── Home page — stats ──────────────────────────────────────────────────
+    statsTitle: 'DUE at a Glance',
+    statFounded: 'Founded',
+    statStudents: 'Students',
+    statPrograms: 'Programs',
+    statCountries: 'Countries',
+
+    // ── Dashboard ──────────────────────────────────────────────────────────
+    dashTitle: 'Trending Questions',
+    dashDesc: 'The most asked questions right now',
+    totalAsked: 'total asks',
+    viewFaq: 'View All FAQs',
+
+    // ── Chat ───────────────────────────────────────────────────────────────
+    chatWelcome: 'Welcome to the Dunaújváros University Information Guide! I can answer questions about NEPTUN, Moodle, scholarships, dormitories, tuition fees, exams, grading, transport, campus facilities, and much more. What would you like to know?',
+    chatPlaceholder: 'Ask me anything about DUE…',
+    chatThinking: 'AI is thinking…',
+
+    // ── FAQ page ───────────────────────────────────────────────────────────
+    faqTitle: 'Frequently Asked Questions',
+    faqSubtitle: 'The most common questions asked by students — click the chat tab to ask your own',
+    faqAsks: 'asks',
+
+    // ── About & History page — header ─────────────────────────────────────
+    historyTitle: 'About & History',
+    historySubtitle: 'From industrial college to internationally recognised university',
+
+    // ── Key fact badges ────────────────────────────────────────────────────
+    histFact1: '41 active Erasmus+ partnerships',
+    histFact2: '42+ nationalities on campus',
+    histFact3: 'University status granted 2016',
+    histFact4: 'BSc & MSc programs taught in English',
+    histFact5: 'Stipendium Hungaricum partner institution',
+    histFact6: 'Research active in Materials Science & IT',
+    histFact7: '70 km south of Budapest on the Danube',
+    histFact8: 'Career Fair with 30+ companies annually',
+
+    // ── About section ──────────────────────────────────────────────────────
+    aboutTitle: 'About the University',
+    aboutText1: 'The University of Dunaújváros (Dunaújvárosi Egyetem, DUE) is a state-accredited Hungarian higher education institution located in Dunaújváros, on the west bank of the Danube River, approximately 70 kilometres south of Budapest. Originally founded to serve the technical needs of a rapidly industrialising socialist city, DUE has evolved into a modern, internationally oriented university offering Bachelor and Master programs in engineering, business, and communication disciplines.',
+    aboutText2: 'The university is particularly known for its strong industry links — a legacy of its industrial origins — its welcoming international community, and its active participation in the Erasmus+ programme. Students from over 42 countries study alongside Hungarian peers in a compact, student-focused campus environment. English-language BSc programs in Computer Science Engineering, Mechanical Engineering, and Business Administration attract students from Africa, Asia, the Middle East, and Europe, making DUE one of Hungary\'s most internationally diverse universities relative to its size.',
+
+    // ── Programs section ───────────────────────────────────────────────────
+    programsTitle: 'Academic Programs',
+    programsBscLabel: 'Bachelor (BSc / BA)',
+    programsMscLabel: 'Master (MSc / MA)',
+    programsEngLabel: 'English-language programs',
+    prog1: 'Computer Science Engineering (BSc)',
+    prog2: 'Mechanical Engineering (BSc)',
+    prog3: 'Materials Engineering (BSc)',
+    prog4: 'Engineering Management (BSc)',
+    prog5: 'Business Administration & Management (BSc)',
+    prog6: 'Communication and Media Science (BA)',
+    prog7: 'Pilot Training + Mechanical Engineering (BSc) — joint program',
+    mProg1: 'Mechanical Engineering (MSc)',
+    mProg2: 'Management and Leadership (MSc)',
+    mProg3: 'Teacher of Engineering (MA)',
+    engProg1: 'Computer Science Engineering (BSc) — fully in English',
+    engProg2: 'Mechanical Engineering (BSc) — fully in English',
+    engProg3: 'Business Administration (BSc) — fully in English',
+    programsNote: 'All programs use the ECTS credit system. A BSc typically requires 180–210 ECTS (3–3.5 years); an MSc requires 120 ECTS (2 years). Visit uniduna.hu for full admission requirements and curricula.',
+
+    // ── Campus & Facilities ────────────────────────────────────────────────
+    campusTitle: 'Campus & Facilities',
+    campusIntro: 'The DUE campus is compact and walkable, with all key buildings — lecture halls, labs, library, dormitories, and sports facilities — within a few minutes of each other. The address is Táncsics Mihály u. 1/A, H-2400 Dunaújváros.',
+    camp1Title: 'University Library',
+    camp1Text: 'The library holds thousands of printed books, journals, and access to major online databases (Springer, Elsevier, JSTOR). It offers quiet reading rooms, computer terminals, printing and binding services, and borrowing rights with your student card. The electronic catalogue is available online.',
+    camp2Title: 'IT & Computer Labs',
+    camp2Text: 'Multiple computer labs are available to students with licensed software including MATLAB, AutoCAD, SolidWorks, development IDEs, and design tools. The Eduroam Wi-Fi network provides internet access throughout the campus and dormitories. All students receive free Microsoft Office 365.',
+    camp3Title: 'Engineering Workshops & Labs',
+    camp3Text: 'The Faculty of Engineering operates specialist labs including a Materials Testing Lab, Mechanical Engineering Workshop (CNC machines, 3D printers, welding equipment), Electronics Lab, and a unique Pilot Training Simulator Facility — one of the few at a Hungarian university.',
+    camp4Title: 'Dormitories (Kollégium)',
+    camp4Text: 'On-campus dormitories provide furnished single, double, and triple rooms with shared kitchens, bathrooms, laundry rooms, common areas, and Wi-Fi. Accommodation is guaranteed for incoming international students. Monthly fees vary by room type — contact international@uniduna.hu for current rates.',
+    camp5Title: 'Sports Facilities',
+    camp5Text: 'Students have access to a multi-purpose sports hall, fitness room, football pitch, tennis courts, and volleyball courts on campus. A swimming pool is accessible at student rates nearby. The Student Union organises football, basketball, table tennis, chess, and e-sports clubs.',
+    camp6Title: 'Campus Canteen & Café',
+    camp6Text: 'The campus canteen (menza) serves subsidised hot lunches (soup + main) weekdays. Vending machines, a campus café, and a small convenience shop are also available. Several restaurants, bakeries, and cafés are within a 5-minute walk in the surrounding neighbourhood.',
+
+    // ── Timeline ───────────────────────────────────────────────────────────
+    timelineTitle: 'Historical Timeline',
+    hist1Year: '1950–51',
+    hist1Title: 'A City Is Built',
+    hist1Text: 'The city now known as Dunaújváros was built from the ground up as Sztálinváros ("Stalin\'s City") — a planned socialist industrial city constructed on the west bank of the Danube. The centrepiece was the Dunai Vasmű (Danube Iron and Steel Works), one of the largest metallurgical plants in Central Europe. Tens of thousands of workers arrived from across Hungary to build and operate the plant, creating an immediate demand for trained technical staff.',
+    hist2Year: '1955',
+    hist2Title: 'The College Is Founded',
+    hist2Text: 'A dedicated technical higher education institution was established to train engineers, technicians, and managers for the expanding iron and steel industry and allied sectors. The college quickly became embedded in the life of the city, producing the skilled workforce that powered the local economy.',
+    hist3Year: '1961',
+    hist3Title: 'De-Stalinisation: City Renamed',
+    hist3Text: 'Following the political thaw of the Khrushchev era, the city was renamed Dunaújváros — meaning "New City on the Danube" — shedding its Stalinist name. The college continued to grow alongside the city, expanding its programs beyond metallurgy to cover mechanical and electrical engineering.',
+    hist4Year: '1970s–80s',
+    hist4Title: 'Expansion & Diversification',
+    hist4Text: 'The institution expanded its curriculum significantly, adding programs in economics, management, and later computer science — reflecting both the needs of the local economy and the global rise of computing. Student numbers grew and new facilities were added, including expanded laboratory spaces and dormitory capacity.',
+    hist5Year: '1990',
+    hist5Title: 'Democratic Transition',
+    hist5Text: 'Hungary\'s peaceful transition to democracy transformed the university\'s governance and academic culture. The institution reorganised as an autonomous college (főiskola), gained greater academic freedom, and rapidly modernised its curriculum to align with European higher education standards. New programs in business administration, informatics, communication, and media science were launched to meet the demands of the emerging market economy.',
+    hist6Year: '1999–2002',
+    hist6Title: 'Bologna Process & European Integration',
+    hist6Text: 'Hungary signed the Bologna Declaration, committing to harmonise its higher education with the European framework. DUE restructured its programs into Bachelor (BSc/BA) and Master (MSc/MA) cycles, adopted the ECTS credit system, and began offering its first English-language courses — opening the door to international students for the first time.',
+    hist7Year: '2000s',
+    hist7Title: 'Going International',
+    hist7Text: 'The college joined the Erasmus programme and built bilateral partnerships with universities across Europe. English-language BSc programs in Computer Science Engineering, Mechanical Engineering, and Business Administration attracted students from Africa, Asia, the Middle East, and Europe. The International Office was established to support growing numbers of foreign students, and DUE signed on as a partner institution for the Stipendium Hungaricum scholarship programme.',
+    hist8Year: '2016',
+    hist8Title: 'University Status Achieved',
+    hist8Text: 'By government decree, the institution was elevated to full university status — the highest classification in the Hungarian higher education system — and officially renamed Dunaújvárosi Egyetem (University of Dunaújváros). This milestone recognised decades of academic development, sustained research output, international engagement, and the breadth and quality of its programs.',
+    hist9Year: '2020s',
+    hist9Title: 'Innovation & Research Growth',
+    hist9Text: 'DUE continued to invest in research infrastructure, expanding its Materials Science, IT, and Business research activities. The university strengthened ties with industry partners including major multinational manufacturers operating in Hungary. The Pilot Training + Mechanical Engineering joint program — one of very few in Hungary — attracted significant attention. Student mobility increased and the international student community now represents 42+ nationalities.',
+    hist10Year: 'Today',
+    hist10Title: 'A Modern, International University',
+    hist10Text: 'The University of Dunaújváros today is a fully accredited Hungarian state university offering 7 BSc/BA and 3 MSc/MA programs, three of which are fully taught in English. With 41 Erasmus+ partnerships, students from over 42 countries, a dedicated International Office, the Stipendium Hungaricum scholarship, and strong industry links, DUE offers an internationally connected education in a welcoming, affordable, and safe Hungarian city.',
+
+    // ── International community ────────────────────────────────────────────
+    intlTitle: 'International Community',
+    intlText: 'DUE has a vibrant and growing international student community. Students come from across Africa (Nigeria, Ghana, Kenya, Tanzania, Cameroon), Asia (Nepal, Pakistan, India, Bangladesh, Vietnam), the Middle East (Jordan, Iraq, Syria), and Europe (Germany, Romania, Slovakia, and others). The International Office provides comprehensive pre-arrival guidance, visa support, orientation week, Hungarian language courses, airport pickup, and ongoing welfare support. The campus atmosphere is friendly, multicultural, and English-speaking.',
+    intlErasmusTitle: 'Erasmus+ Exchange',
+    intlErasmusText: 'Current DUE students can apply for Erasmus+ mobility to spend one or two semesters at a partner university in Europe. Erasmus grants cover a significant portion of travel and living costs. Partner universities span Germany, France, Spain, Portugal, Czech Republic, Poland, and more. Apply through the International Office — deadlines are typically in November for the following autumn.',
+    intlStipTitle: 'Stipendium Hungaricum',
+    intlStipText: 'DUE is an approved partner institution for the Stipendium Hungaricum Scholarship, Hungary\'s flagship international scholarship programme. The scholarship covers: full tuition fee waiver, free dormitory accommodation, monthly stipend (approx. HUF 43,700 for BSc students, HUF 47,600 for MSc), and supplementary health insurance. Applications are made through the student\'s home country sending partner before January/February each year. Visit stipendiumhungaricum.hu for more information.',
+
+    // ── Research ───────────────────────────────────────────────────────────
+    researchTitle: 'Research & Innovation',
+    researchText: 'Research at DUE is closely tied to its industrial heritage and the needs of the local and national economy. Key research areas include:',
+    res1: 'Materials Science & Metallurgy — continuing a tradition of excellence linked to the Dunaferr steelworks',
+    res2: 'Mechanical Engineering & Manufacturing Technology — including CNC, 3D printing, and modern production methods',
+    res3: 'Computer Science & Artificial Intelligence — covering machine learning, software engineering, and cybersecurity',
+    res4: 'Business & Management Science — economic development, entrepreneurship, and regional business studies',
+    res5: 'Environmental Engineering — sustainable production, waste management, and environmental impact assessment',
+    researchTDK: 'Students are encouraged to participate in the national Student Research Conference (TDK) from their 2nd year onwards. Award-winning TDK papers have resulted in publications and conference presentations at European level.',
+
+    // ── Student Life ───────────────────────────────────────────────────────
+    studentLifeTitle: 'Student Life',
+    studentLifeText: 'Life at DUE is active, friendly, and affordable. The Student Union (HÖK) organises a busy calendar of events throughout the year:',
+    life1: 'Welcome Week and International Night for new students at the start of each semester',
+    life2: 'Sports competitions: football, basketball, volleyball, table tennis, chess, and e-sports tournaments',
+    life3: 'Cultural trips to Budapest, Pécs, Eger, Lake Balaton, and other Hungarian destinations',
+    life4: 'Career Fair in spring with 30+ companies actively recruiting DUE graduates',
+    life5: 'Student clubs: IT, Engineering, Business, Media, International Student Club, and more',
+    life6: 'Annual university gala, graduation ceremony, and end-of-year celebrations',
+    studentLifeNote: 'Student life in Dunaújváros is significantly more affordable than in Budapest — rent, food, and entertainment cost considerably less. The city is safe, walkable, and has a growing café and restaurant scene.',
+
+    // ── City section ───────────────────────────────────────────────────────
+    cityTitle: 'The City of Dunaújváros',
+    cityText1: 'Dunaújváros ("New City on the Danube") is a modern, planned city of approximately 45,000 people situated on the western bank of the Danube, 70 km south of Budapest. Despite its relatively recent founding (1950), the city has matured into a pleasant urban environment with a good quality of life, excellent transport links to Budapest, and all the amenities a student could need.',
+    cityText2: 'The city centre is compact and walkable. You will find supermarkets (Aldi, Lidl, Spar, Tesco), a shopping centre (Dunaújváros Pláza), pharmacies, banks, cafés, restaurants, bars, a cinema (Vörösmarty Cinema), a cultural centre (Bartók Béla Művelődési Ház), a sports complex, and a beautiful riverside promenade along the Danube. Bicycle paths connect the university campus to the city centre.',
+    cityText3: 'Budapest is easily reachable: direct buses from the Dunaújváros bus terminal run to Népliget station in Budapest (approx. 1.5 hours, every 1–2 hours). Train connections via Pusztaszabolcs are also available. The Hungarian student card gives 50% discount on all national public transport.',
+
+    // ── Contact section ────────────────────────────────────────────────────
+    contactTitle: 'Contact & Key Offices',
+    contactAddress: 'Táncsics Mihály u. 1/A, H-2400 Dunaújváros, Hungary',
+    contactIntlEmail: 'international@uniduna.hu',
+    contactWeb: 'uniduna.hu',
+    contactIntlLabel: 'International Office',
+    contactStudyLabel: 'Study Office (NEPTUN & grades)',
+    contactHokLabel: 'Student Union (HÖK)',
+    contactHokEmail: 'hok@uniduna.hu',
+    contactEmergency: '112 (Police / Fire / Ambulance)',
+
+    // ── Profile ────────────────────────────────────────────────────────────
+    profileTitle: 'Create Your Profile',
+    profileEditTitle: 'Edit Profile',
+    profileSubtitle: 'Your information is saved locally on this device.',
+    profileSave: 'Save Profile',
+    profileDelete: 'Delete Profile',
+    profileCancel: 'Cancel',
+    profileEdit: 'Edit Profile',
+    fieldName: 'Full Name',
+    fieldId: 'Student ID',
+    fieldEmail: 'University Email',
+    fieldProgram: 'Program',
+    fieldYear: 'Year of Study',
+    selectProgram: 'Select a program…',
+    selectYear: 'Select a year…',
+    errName: 'Full name is required.',
+    errId: 'Student ID is required.',
+    errEmail: 'Email is required.',
+    errEmailInvalid: 'Enter a valid email.',
+    errProgram: 'Please select a program.',
+    errYear: 'Please select a year.',
+    labelStudentId: 'Student ID',
+    labelEmail: 'Email',
+    labelYear: 'Year',
+  },
+
+  hu: {
+    // ── App shell ──────────────────────────────────────────────────────────
+    appTitle: 'DUE Útmutató',
+    appSubtitle: 'Dunaújvárosi Egyetem',
+    menu: 'Menü',
+    close: 'Menü bezárása',
+
+    // ── Drawer nav ─────────────────────────────────────────────────────────
+    home: 'Főoldal',
+    dashboard: 'Áttekintés',
+    chat: 'Kérdés feltevése',
+    faq: 'GYIK',
+    history: 'Rólunk & Történelem',
+    profile: 'Profilom',
+
+    // ── Home page — hero ───────────────────────────────────────────────────
+    heroWelcome: 'Üdvözöljük a',
+    heroUniversity: 'Dunaújvárosi Egyetemen',
+    heroTagline: 'Az Ön teljes körű kampusz-információs útmutatója',
+    heroDesc: 'Azonnali válaszok tanrendekről, létesítményekről, díjakról és a kampusz életéről — egy helyen. Átfogó DUE tudásbázissal.',
+    heroChatBtn: 'Kérdés feltevése',
+    heroDashBtn: 'Áttekintés megtekintése',
+
+    // ── Home page — about strip ────────────────────────────────────────────
+    aboutStripText: 'Alapítva 1955 · Dunaújváros, Magyarország · 42+ nemzetiség · 41 Erasmus partnerség · BSc & MSc programok angolul',
+
+    // ── Home page — features ───────────────────────────────────────────────
+    featuresTitle: 'Miben segíthetek?',
+    feat1Title: 'Azonnali válaszok',
+    feat1Desc: 'Kérdezzen bármit a kampusz életéről egyszerű nyelven — azonnali AI-alapú választ kap a DUE tudásbázisból.',
+    feat2Title: 'Trending témák',
+    feat2Desc: 'Tekintse meg, miről kérdeznek leggyakrabban a hallgatótársai — NEPTUN-tól az ösztöndíjakig.',
+    feat3Title: 'Kampusz & GYIK',
+    feat3Desc: 'Rangsorolt GYIK kérdések létesítményekről, díjakról, kollégiumról és az akadémiai életről.',
+    feat4Title: 'Hallgatói profil',
+    feat4Desc: 'Mentse el hallgatói adatait a személyre szabott kampusz-útmutatóhoz.',
+
+    // ── Home page — stats ──────────────────────────────────────────────────
+    statsTitle: 'A DUE egy pillantásra',
+    statFounded: 'Alapítva',
+    statStudents: 'Hallgató',
+    statPrograms: 'Szak',
+    statCountries: 'Ország',
+
+    // ── Dashboard ──────────────────────────────────────────────────────────
+    dashTitle: 'Trending kérdések',
+    dashDesc: 'A jelenleg leggyakrabban feltett kérdések',
+    totalAsked: 'kérdés összesen',
+    viewFaq: 'Összes GYIK megtekintése',
+
+    // ── Chat ───────────────────────────────────────────────────────────────
+    chatWelcome: 'Üdvözöljük a Dunaújvárosi Egyetem Információs Útmutatójában! Választ adhatok kérdéseire a NEPTUN rendszerről, Moodle-ről, ösztöndíjakról, kollégiumról, tandíjakról, vizsgákról, osztályzásról, közlekedésről, kampusz-létesítményekről és sok másról. Mit szeretne tudni?',
+    chatPlaceholder: 'Kérdezzen bármit a DUE-ről…',
+    chatThinking: 'Az AI gondolkodik…',
+
+    // ── FAQ page ───────────────────────────────────────────────────────────
+    faqTitle: 'Gyakran Ismételt Kérdések',
+    faqSubtitle: 'A hallgatók által leggyakrabban feltett kérdések — kattintson a Chat fülre saját kérdés feltevéséhez',
+    faqAsks: 'kérdés',
+
+    // ── About & History page — header ─────────────────────────────────────
+    historyTitle: 'Rólunk & Történelem',
+    historySubtitle: 'Ipari főiskolától nemzetközileg elismert egyetemig',
+
+    // ── Key fact badges ────────────────────────────────────────────────────
+    histFact1: '41 aktív Erasmus+ partnerség',
+    histFact2: '42+ nemzetiség a kampuszon',
+    histFact3: 'Egyetemi státusz: 2016',
+    histFact4: 'BSc & MSc programok angolul',
+    histFact5: 'Stipendium Hungaricum partner intézmény',
+    histFact6: 'Anyagtudomány & IT kutatás',
+    histFact7: '70 km-re Budapesttől, a Duna partján',
+    histFact8: 'Éves Karriernap: 30+ cég',
+
+    // ── About section ──────────────────────────────────────────────────────
+    aboutTitle: 'Az Egyetemről',
+    aboutText1: 'A Dunaújvárosi Egyetem (DUE) államilag akkreditált magyar felsőoktatási intézmény, amely Dunaújvárosban, a Duna nyugati partján, Budapesttől mintegy 70 kilométerre délre található. Eredetileg egy gyorsan iparosodó szocialista város műszaki igényeinek kiszolgálására alapították; a DUE mára modern, nemzetközileg orientált egyetemmé fejlődött, amely mérnöki, üzleti és kommunikációs területeken kínál BSc és MSc programokat.',
+    aboutText2: 'Az egyetemet különösen erős iparági kapcsolatai, barátságos nemzetközi közössége és az Erasmus+ programban való aktív részvétele jellemzi. Több mint 42 ország hallgatói tanulnak együtt a magyar hallgatókkal egy kompakt, hallgatóközpontú kampuszon. Az angol nyelvű BSc programok — Informatikai Mérnöki, Gépészmérnöki és Üzleti Adminisztrációs szakon — Afrikából, Ázsiából, a Közel-Keletről és Európából vonzanak hallgatókat, így a DUE méretéhez képest Magyarország egyik legnemzetközibb egyeteme.',
+
+    // ── Programs section ───────────────────────────────────────────────────
+    programsTitle: 'Akadémiai Programok',
+    programsBscLabel: 'Alapszak (BSc / BA)',
+    programsMscLabel: 'Mesterszak (MSc / MA)',
+    programsEngLabel: 'Angol nyelvű programok',
+    prog1: 'Informatikai Mérnöki (BSc)',
+    prog2: 'Gépészmérnöki (BSc)',
+    prog3: 'Anyagmérnöki (BSc)',
+    prog4: 'Mérnök-menedzser (BSc)',
+    prog5: 'Gazdálkodási és Menedzsment (BSc)',
+    prog6: 'Kommunikáció és Médiatudomány (BA)',
+    prog7: 'Pilótaképzés + Gépészmérnöki (BSc) — közös program',
+    mProg1: 'Gépészmérnöki (MSc)',
+    mProg2: 'Gazdálkodás és Menedzsment (MSc)',
+    mProg3: 'Műszaki Tanár (MA)',
+    engProg1: 'Informatikai Mérnöki (BSc) — teljes egészében angolul',
+    engProg2: 'Gépészmérnöki (BSc) — teljes egészében angolul',
+    engProg3: 'Business Administration (BSc) — teljes egészében angolul',
+    programsNote: 'Minden program az ECTS kreditrendszert alkalmazza. Egy BSc általában 180–210 ECTS kreditet igényel (3–3,5 év); egy MSc 120 ECTS-t (2 év). A teljes felvételi követelményekért és tantervekért látogasson el az uniduna.hu oldalra.',
+
+    // ── Campus & Facilities ────────────────────────────────────────────────
+    campusTitle: 'Kampusz és Létesítmények',
+    campusIntro: 'A DUE kampusza kompakt és gyalog bejárható: az előadótermek, laborok, könyvtár, kollégiumok és sportlétesítmények mind néhány percre vannak egymástól. A cím: Táncsics Mihály u. 1/A, H-2400 Dunaújváros.',
+    camp1Title: 'Egyetemi Könyvtár',
+    camp1Text: 'A könyvtár több ezer nyomtatott könyvet, folyóiratot és hozzáférést biztosít a főbb online adatbázisokhoz (Springer, Elsevier, JSTOR). Csendes olvasótermeket, számítógép-terminálokat, nyomtatási és kötészeti szolgáltatásokat kínál, a kölcsönzési jog a diákigazolványhoz kapcsolódik.',
+    camp2Title: 'IT és Számítógép-termek',
+    camp2Text: 'Több számítógép-terem áll a hallgatók rendelkezésére licencelt szoftverekkel (MATLAB, AutoCAD, SolidWorks, fejlesztői IDE-k). Az Eduroam Wi-Fi hálózat internethozzáférést biztosít az egész kampuszon és a kollégiumokban. Minden hallgató ingyenesen kap Microsoft Office 365 hozzáférést.',
+    camp3Title: 'Mérnöki Laborok és Műhelyek',
+    camp3Text: 'A Mérnöki Kar speciális laborokat működtet: Anyagvizsgáló Labor, Gépészeti Műhely (CNC-gépek, 3D nyomtatók, hegesztő felszerelés), Elektronika Labor, és egyedülálló Pilótaszimulátor — az egyik kevés ilyen létesítmény egy magyar egyetemen.',
+    camp4Title: 'Kollégiumok',
+    camp4Text: 'A kampuszon lévő kollégiumok bútorozott egy-, két- és háromágyas szobákat kínálnak közös konyhával, fürdőszobával, mosodával, közösségi terekkal és Wi-Fi-vel. A beérkező nemzetközi hallgatóknak garantált a szállás. A díjak szobatípusonként változnak — a jelenlegi árakért írjon a international@uniduna.hu címre.',
+    camp5Title: 'Sportlétesítmények',
+    camp5Text: 'A hallgatók többfunkciós sportcsarnokot, konditermet, focipályát, teniszpályákat és röplabdapályákat vehetnek igénybe a kampuszon. A közelben uszoda érhető el kedvezményes áron. A Hallgatói Önkormányzat futball-, kosárlabda-, asztalitenisz-, sakk- és e-sport-klubokat szervez.',
+    camp6Title: 'Menza és Büfé',
+    camp6Text: 'Az egyetemi menza hétköznapokon kedvezményes meleg ebédet (leves + főétel) kínál. Automaták, egy kampusz-kávézó és egy kis bolt is elérhető. A szomszédos utcákban 5 perces sétára éttermek, pékségek és kávézók találhatók.',
+
+    // ── Timeline ───────────────────────────────────────────────────────────
+    timelineTitle: 'Történelmi Idővonal',
+    hist1Year: '1950–51',
+    hist1Title: 'Egy város épül',
+    hist1Text: 'A mai Dunaújvárost Sztálinváros ("Sztálin városa") néven nulláról építették fel — tervezett szocialista ipari városként a Duna nyugati partján. A középpontban a Dunai Vasmű állt, Közép-Európa egyik legnagyobb kohászati üzeme. Tízezer számra érkeztek munkások az ország minden tájáról, azonnali igényt teremtve képzett műszaki személyzet iránt.',
+    hist2Year: '1955',
+    hist2Title: 'Megalakul a főiskola',
+    hist2Text: 'Önálló műszaki felsőoktatási intézményt alapítottak a bővülő vas- és acélipar mérnökeinek, technikusainak és menedzsereinek képzésére. A főiskola gyorsan a város életének szerves részévé vált, és azt a szakképzett munkaerőt bocsátotta ki, amely a helyi gazdaságot hajtotta.',
+    hist3Year: '1961',
+    hist3Title: 'Desztalinizáció: a város új nevet kap',
+    hist3Text: 'A hruscsovi politikai enyhülést követően a várost Dunaújváros — "Új város a Dunán" — névre keresztelték, levetkőzve sztálinista nevét. A főiskola tovább fejlődött, programjait a kohászaton túl gépészeti és elektrotechnikai mérnöki területekre bővítve.',
+    hist4Year: '1970–80-as évek',
+    hist4Title: 'Bővülés és diverzifikáció',
+    hist4Text: 'Az intézmény tanrendét jelentősen bővítette: közgazdasági, menedzsment, majd informatikai programokat indított — reagálva mind a helyi gazdaság igényeire, mind a számítástechnika globális térnyerésére. A hallgatói létszám nőtt, új laborokat és kollégiumférőhelyeket alakítottak ki.',
+    hist5Year: '1990',
+    hist5Title: 'Demokratikus átmenet',
+    hist5Text: 'Magyarország demokratikus átmenete átalakította az intézmény irányítási rendszerét és akadémiai kultúráját. Autonóm főiskolaként szerveződött újjá, nagyobb akadémiai szabadságot kapott, és gyorsan modernizálta tantervét az európai felsőoktatási normákhoz igazodva. Üzleti adminisztrációs, informatikai, kommunikációs és médiatudományi szakokat indítottak a kialakuló piacgazdaság igényeire válaszul.',
+    hist6Year: '1999–2002',
+    hist6Title: 'Bolognai folyamat & európai integráció',
+    hist6Text: 'Magyarország aláírta a Bolognai Nyilatkozatot, vállalva a felsőoktatás harmonizálását az európai keretrendszerrel. A DUE programjait alapszakokra (BSc/BA) és mesterszakokra (MSc/MA) szervezte át, bevezette az ECTS kreditrendszert, és megindította első angol nyelvű kurzusait — megnyitva az ajtót a külföldi hallgatók előtt.',
+    hist7Year: '2000-es évek',
+    hist7Title: 'Nemzetközivé válás',
+    hist7Text: 'A főiskola csatlakozott az Erasmus programhoz és kétoldalú partnerségeket épített ki egész Európa egyetemeivel. Angol nyelvű BSc programjai Afrikából, Ázsiából, a Közel-Keletről és Európából vonzottak hallgatókat. Megalakult a Nemzetközi Iroda a növekvő számú külföldi hallgató támogatására, és a DUE a Stipendium Hungaricum ösztöndíjprogram partner intézménye lett.',
+    hist8Year: '2016',
+    hist8Title: 'Elnyeri az egyetemi státuszt',
+    hist8Text: 'Kormányrendelettel az intézményt teljes egyetemi rangra emelték — a magyar felsőoktatási rendszer legmagasabb besorolására —, és hivatalosan Dunaújvárosi Egyetem névre keresztelték. Ez a mérföldkő évtizedes akadémiai fejlődést, tartós kutatási teljesítményt, nemzetközi elkötelezettséget és a programok szélességét és minőségét ismerte el.',
+    hist9Year: '2020-as évek',
+    hist9Title: 'Innováció és kutatásfejlesztés',
+    hist9Text: 'A DUE folytatta a kutatási infrastruktúra fejlesztését, bővítve anyagtudományi, IT- és üzleti kutatási tevékenységét. Az egyetem erősítette kapcsolatait a Magyarországon működő nagy multinacionális gyártó vállalatokkal. A Pilótaképzés + Gépészmérnöki közös program — az egyik kevés ilyen Magyarországon — jelentős figyelmet vonzott. A hallgatói mobilitás nőtt, a nemzetközi hallgatói közösség ma már 42+ nemzetiséget képvisel.',
+    hist10Year: 'Ma',
+    hist10Title: 'Modern, nemzetközi egyetem',
+    hist10Text: 'A Dunaújvárosi Egyetem ma teljes körűen akkreditált magyar állami egyetem, amely 7 BSc/BA és 3 MSc/MA programot kínál, amelyek közül három teljes egészében angolul folyik. 41 Erasmus+ partnerséggel, 42+ ország hallgatóival, dedikált Nemzetközi Irodával, Stipendium Hungaricum ösztöndíjjal és erős iparági kapcsolatokkal a DUE barátságos, megfizethető és biztonságos magyar városban nyújt nemzetközileg összekötött oktatást.',
+
+    // ── International community ────────────────────────────────────────────
+    intlTitle: 'Nemzetközi Közösség',
+    intlText: 'A DUE-nek vibráló és növekvő nemzetközi hallgatói közössége van. A hallgatók Afrikából (Nigéria, Ghána, Kenya, Tanzánia, Kamerun), Ázsiából (Nepál, Pakisztán, India, Banglades, Vietnám), a Közel-Keletről (Jordánia, Irak, Szíria) és Európából (Németország, Románia, Szlovákia) érkeznek. A Nemzetközi Iroda átfogó érkezés előtti útmutatást, vízumtámogatást, orientációs hetet, magyar nyelvi kurzusokat, repülőtéri transzfert és folyamatos jóléti támogatást nyújt.',
+    intlErasmusTitle: 'Erasmus+ Csere',
+    intlErasmusText: 'A jelenlegi DUE-hallgatók jelentkezhetnek Erasmus+ mobilitásra, hogy egy vagy két szemesztert töltsenek egy partner egyetemen Európában. Az Erasmus-ösztöndíjak az utazási és megélhetési költségek jelentős részét fedezik. A partneregyetemek Németországban, Franciaországban, Spanyolországban, Portugáliában, Csehországban, Lengyelországban és másutt találhatók. A Nemzetközi Irodán keresztül kell jelentkezni — a határidők általában novemberben vannak a következő őszi szemeszterre.',
+    intlStipTitle: 'Stipendium Hungaricum',
+    intlStipText: 'A DUE a Stipendium Hungaricum Ösztöndíjprogram jóváhagyott partner intézménye, amely Magyarország zászlóshajó nemzetközi ösztöndíjprogramja. Az ösztöndíj magában foglalja: teljes tandíjmentességet, ingyenes kollégiumot, havi ösztöndíjat (kb. 43 700 HUF BSc hallgatóknak, 47 600 HUF MSc hallgatóknak) és kiegészítő egészségbiztosítást. A jelentkezést a hallgató hazájában lévő küldő partneren keresztül kell benyújtani január/február előtt. További információ: stipendiumhungaricum.hu.',
+
+    // ── Research ───────────────────────────────────────────────────────────
+    researchTitle: 'Kutatás és Innováció',
+    researchText: 'A DUE-n folyó kutatás szorosan kapcsolódik az intézmény ipari hagyományaihoz és a helyi, illetve nemzeti gazdaság igényeihez. Főbb kutatási területek:',
+    res1: 'Anyagtudomány & Kohászat — a Dunaferr acélgyárhoz kapcsolódó kiválósági hagyomány folytatása',
+    res2: 'Gépészmérnöki & Gyártástechnológia — CNC, 3D nyomtatás és modern gyártási módszerek',
+    res3: 'Informatika & Mesterséges Intelligencia — gépi tanulás, szoftverfejlesztés és kiberbiztonság',
+    res4: 'Üzleti & Menedzsmenttudományok — gazdaságfejlesztés, vállalkozás és regionális üzleti kutatás',
+    res5: 'Környezetmérnöki — fenntartható termelés, hulladékgazdálkodás és környezeti hatásvizsgálat',
+    researchTDK: 'A hallgatókat 2. évtől bátorítják a részvételre az Országos Tudományos Diákköri Konferencián (TDK). A díjnyertes TDK dolgozatok európai szintű konferencia-publikációkat eredményeztek.',
+
+    // ── Student Life ───────────────────────────────────────────────────────
+    studentLifeTitle: 'Hallgatói Élet',
+    studentLifeText: 'A DUE-n aktív, barátságos és megfizethető az élet. A Hallgatói Önkormányzat (HÖK) egész évben programokat szervez:',
+    life1: 'Üdvözlő hét és Nemzetközi Est új hallgatóknak minden szemeszter elején',
+    life2: 'Sportversenyek: futball, kosárlabda, röplabda, asztalitenisz, sakk és e-sport tornák',
+    life3: 'Kulturális kirándulások Budapestre, Pécsre, Egerbe, a Balatonhoz és más magyar célpontokra',
+    life4: 'Tavaszi Karriernap 30+ aktívan toborzó cég részvételével',
+    life5: 'Hallgatói klubok: IT, mérnöki, üzleti, média, Erasmus/International Student Club és még több',
+    life6: 'Éves egyetemi gála, diplomaosztó ünnepség és tanévzáró rendezvények',
+    studentLifeNote: 'A dunaújvárosi hallgatói élet jelentősen megfizethetőbb, mint Budapesten — a lakhatás, az ételek és a szórakozás lényegesen kevesebbe kerül. A város biztonságos, gyalog bejárható, és egyre bővülő kávézó- és étteremkínálattal rendelkezik.',
+
+    // ── City section ───────────────────────────────────────────────────────
+    cityTitle: 'Dunaújváros Városa',
+    cityText1: 'A Dunaújváros ("Új város a Dunán") egy mintegy 45 000 fős modern, tervezett város a Duna nyugati partján, Budapesttől 70 km-re délre. Bár viszonylag nemrég alapították (1950), a város kellemes városi környezetté érett jó életminőséggel, kiváló közlekedési összeköttetéssel Budapesttel és minden szükséges hallgatói szolgáltatással.',
+    cityText2: 'A belváros kompakt és gyalog bejárható. Megtalálható itt: szupermarketek (Aldi, Lidl, Spar, Tesco), bevásárlóközpont (Dunaújváros Pláza), gyógyszertárak, bankok, kávézók, éttermek, bárok, mozi (Vörösmarty Mozi), kulturális centrum (Bartók Béla Művelődési Ház), sportlétesítmény és gyönyörű dunaparti sétány. Kerékpárútak kötik össze az egyetemet a belvárossal.',
+    cityText3: 'Budapest könnyen elérhető: a Dunaújváros autóbusz-állomásról közvetlen buszok indulnak a budapesti Népliget pályaudvarra (kb. 1,5 óra, 1–2 óránként). Pusztaszabolcson át vasúti összeköttetés is elérhető. A magyar diákigazolvány 50% kedvezményt biztosít az összes hazai tömegközlekedési eszközre.',
+
+    // ── Contact section ────────────────────────────────────────────────────
+    contactTitle: 'Kapcsolat és Irodák',
+    contactAddress: 'Táncsics Mihály u. 1/A, H-2400 Dunaújváros, Magyarország',
+    contactIntlEmail: 'international@uniduna.hu',
+    contactWeb: 'uniduna.hu',
+    contactIntlLabel: 'Nemzetközi Iroda',
+    contactStudyLabel: 'Tanulmányi Iroda (NEPTUN & jegyek)',
+    contactHokLabel: 'Hallgatói Önkormányzat (HÖK)',
+    contactHokEmail: 'hok@uniduna.hu',
+    contactEmergency: '112 (Rendőrség / Tűzoltóság / Mentők)',
+
+    // ── Profile ────────────────────────────────────────────────────────────
+    profileTitle: 'Profil létrehozása',
+    profileEditTitle: 'Profil szerkesztése',
+    profileSubtitle: 'Az adatai helyileg kerülnek mentésre ezen az eszközön.',
+    profileSave: 'Profil mentése',
+    profileDelete: 'Profil törlése',
+    profileCancel: 'Mégse',
+    profileEdit: 'Profil szerkesztése',
+    fieldName: 'Teljes név',
+    fieldId: 'Hallgatói azonosító',
+    fieldEmail: 'Egyetemi e-mail',
+    fieldProgram: 'Szak',
+    fieldYear: 'Tanulmányi év',
+    selectProgram: 'Válasszon szakot…',
+    selectYear: 'Válasszon évet…',
+    errName: 'A teljes név megadása kötelező.',
+    errId: 'A hallgatói azonosító megadása kötelező.',
+    errEmail: 'Az e-mail megadása kötelező.',
+    errEmailInvalid: 'Adjon meg egy érvényes e-mail-t.',
+    errProgram: 'Kérjük, válasszon szakot.',
+    errYear: 'Kérjük, válasszon évet.',
+    labelStudentId: 'Hallgatói azonosító',
+    labelEmail: 'E-mail',
+    labelYear: 'Év',
+  },
+};
